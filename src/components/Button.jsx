@@ -1,9 +1,9 @@
-const Button = ({ className }) => {
+const Button = ({ className, children }) => {
   return (
     <button
-      className={`${"bg-[#00df9a] text-black rounded-md py-3 w-[12rem]"} ${className}`}
+      className={`${"bg-[#00df9a] text-black rounded-md py-3 "} ${className}`}
     >
-      Get Started
+      {children}
     </button>
   );
 };
